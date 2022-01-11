@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '.']
+  args: ['build', '-t', 'gcr.io/helpful-seer-337909/testing', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push']
+  args: ['push', 'gcr.io/helpful-seer-337909/testing']
